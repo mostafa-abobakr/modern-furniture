@@ -1,0 +1,17 @@
+.banner {
+    background-color: rgb(237, 219, 204);
+    text-align: center;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.banner h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 20px;
+        color: rgb(44, 38, 33);
+}
+
+.banner p {
+    color: rgba(44, 38, 33, 0.59);
+}

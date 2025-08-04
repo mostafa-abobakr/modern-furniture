@@ -9,7 +9,6 @@ const Cart = () => {
               <p>{items} item in your cart</p>
           </div>
           {/* <CartItem /> */}
-          <Sammary />
       </>
   );
 }

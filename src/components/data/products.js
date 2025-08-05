@@ -5,29 +5,62 @@ import diningTableImg from "../../assets/dining-table.jpg";
 import storageCabinetImg from "../../assets/storage-cabinet.jpg";
 import greySofaImg from "../../assets/grey-sofa.jpg";
 import platformBedImg from "../../assets/platform-bed.jpg";
-import product25Img from "../../imgs/imgi_11_product-25-500x500.webp";
-import product32Img from "../../imgs/imgi_126_product-32.webp";
-import product30Img from "../../imgs/imgi_132_product-30.webp";
-import product31Img from "../../imgs/imgi_138_product-31.webp";
-import product29Img from "../../imgs/imgi_144_product-29.webp";
-import product7Img from "../../imgs/imgi_32_product-7.webp";
-import product10Img from "../../imgs/imgi_7_product-10-500x500.webp";
-import product41Img from "../../imgs/imgi_9_product-41-500x500.webp";
-import productBebendum from "../../imgs/Bebendum Arcu.webp";
-import productDiam from "../../imgs/Diam Vlutpat.webp";
-import productDolore from "../../imgs/Dolore Magna.webp";
-import productAliquam from "../../imgs/aliquam Blandit.webp";
-import productAugue from "../../imgs/augue Mauris.webp";
-import productLacus from "../../imgs/augue lacus.webp";
-import productCommodo from "../../imgs/commodo amcorper.webp";
-import productSofa1 from "../../imgs/imgi_159_360_F_1160921373_aPTocF0caQi0ym9rSe1wfPo9cIb37I9o.jpg";
-import productSofa2 from "../../imgs/imgi_169_sofa-modern-full-size-fine-no-artifacts-21390098.jpg";
-import productBed1 from "../../imgs/imgi_170_two-different-styles-wooden-furniture-modern-design-modern-style-minimalist-appearance-colorful-design-bed-no-background-different-design-png-white-background-isolated-abstract-3d-model_789096-14304.jpg";
-import productSofa3 from "../../imgs/imgi_178_sofa-sectional-L8q9QmF-600.jpg";
-import productChair1 from "../../imgs/imgi_204_linz-craft-chair-mone-034-chairs-78259351-34442773725335.jpg";
-import productSofa4 from "../../imgs/imgi_208_Daniel%2BSofa%2BSide%2BAngle%2BNo%2BBackground.jpg";
-import productBed2 from "../../imgs/imgi_218_two-different-styles-wooden-furniture-modern-design-modern-style-minimalist-appearance-colorful-design-bed-no-background-different-design-png-white-background-isolated-abstract-3d-model_789096-14371.jpg";
 
+// Importing additional images from imgs directory
+import product25Img from "../../assets/imgs/imgi_11_product-25-500x500.webp";
+import product32Img from "../../assets/imgs/imgi_126_product-32.webp";
+import product30Img from "../../assets/imgs/imgi_132_product-30.webp";
+import product31Img from "../../assets/imgs/imgi_138_product-31.webp";
+import product29Img from "../../assets/imgs/imgi_144_product-29.webp";
+import product7Img from "../../assets/imgs/imgi_32_product-7.webp";
+import product10Img from "../../assets/imgs/imgi_7_product-10-500x500.webp";
+import product41Img from "../../assets/imgs/imgi_9_product-41-500x500.webp";
+import productBebendum from "../../assets/imgs/Bebendum Arcu.webp";
+import productDiam from "../../assets/imgs/Diam Vlutpat.webp";
+import productDolore from "../../assets/imgs/Dolore Magna.webp";
+import productAliquam from "../../assets/imgs/aliquam Blandit.webp";
+import productAugue from "../../assets/imgs/augue Mauris.webp";
+import productLacus from "../../assets/imgs/augue lacus.webp";
+import productCommodo from "../../assets/imgs/commodo amcorper.webp";
+import productSofa1 from "../../assets/imgs/imgi_159_360_F_1160921373_aPTocF0caQi0ym9rSe1wfPo9cIb37I9o.jpg";
+import productSofa2 from "../../assets/imgs/imgi_169_sofa-modern-full-size-fine-no-artifacts-21390098.jpg";
+import productSofa3 from "../../assets/imgs/imgi_178_sofa-sectional-L8q9QmF-600.jpg";
+import productChair1 from "../../assets/imgs/imgi_204_linz-craft-chair-mone-034-chairs-78259351-34442773725335.jpg";
+import productSofa4 from "../../assets/imgs/imgi_208_Daniel%2BSofa%2BSide%2BAngle%2BNo%2BBackground.jpg";
+
+// // Array of all available images
+// const allImages = [
+//     { id: "wooden-chair", img: woodenChairImg },
+//   { id: "blue-armchair", img: blueArmchairImg },
+//   { id: "dining-table", img: diningTableImg },
+//   { id: "storage-cabinet", img: storageCabinetImg },
+//   { id: "grey-sofa", img: greySofaImg },
+//   { id: "platform-bed", img: platformBedImg },
+
+//   { id: "product-25", img: product25Img },
+//   { id: "product-32", img: product32Img },
+//   { id: "product-30", img: product30Img },
+//   { id: "product-31", img: product31Img },
+//   { id: "product-29", img: product29Img },
+//   { id: "product-7", img: product7Img },
+//   { id: "product-10", img: product10Img },
+//   { id: "product-41", img: product41Img },
+//   { id: "bebendum", img: productBebendum },
+//   { id: "diam", img: productDiam },
+//   { id: "dolore", img: productDolore },
+//   { id: "aliquam", img: productAliquam },
+//   { id: "augue", img: productAugue },
+//   { id: "lacus", img: productLacus },
+//   { id: "commodo", img: productCommodo },
+
+//   { id: "sofa-1", img: productSofa1 },
+//   { id: "sofa-2", img: productSofa2 },
+//   { id: "bed-1", img: productBed1 },
+//   { id: "sofa-3", img: productSofa3 },
+//   { id: "chair-1", img: productChair1 },
+//   { id: "sofa-4", img: productSofa4 },
+//   { id: "bed-2", img: productBed2 },
+// ];
 
 export const products = [
   {
@@ -121,7 +154,7 @@ export const products = [
     id: "8",
     name: "Leather Recliner",
     price: 499.99,
-    image: productSofa1,
+    image: product7Img,
     category: "Armchairs",
     description: "Luxurious leather recliner with smooth rocking motion.",
     inStock: true,
@@ -227,7 +260,7 @@ export const products = [
     name: "Dresser",
     price: 349.99,
     originalPrice: 429.99,
-    image: productChair1,
+    image: productDolore,
     category: "Storage",
     description: "6-drawer dresser with smooth gliding drawers.",
     inStock: true,
@@ -238,7 +271,7 @@ export const products = [
     id: "18",
     name: "Sleeper Sofa",
     price: 849.99,
-    image: productSofa2,
+    image: productAliquam,
     category: "Sofas",
     description: "Convertible sofa bed with memory foam mattress.",
     inStock: true,
@@ -250,7 +283,7 @@ export const products = [
     name: "Nightstand",
     price: 129.99,
     originalPrice: 159.99,
-    image: productBed1,
+    image: productAugue,
     category: "Storage",
     description: "Modern nightstand with charging station.",
     inStock: true,
@@ -261,7 +294,7 @@ export const products = [
     id: "20",
     name: "Dining Chair Set",
     price: 399.99,
-    image: productSofa4,
+    image: productLacus,
     category: "Chairs",
     description: "Set of 4 upholstered dining chairs.",
     inStock: true,
@@ -274,7 +307,7 @@ export const products = [
     name: "Loveseat",
     price: 599.99,
     originalPrice: 749.99,
-    image: productSofa4,
+    image: productCommodo,
     category: "Sofas",
     description: "Compact two-seater sofa with reversible chaise.",
     inStock: true,
@@ -353,7 +386,7 @@ export const products = [
     name: "Bar Cart",
     price: 199.99,
     originalPrice: 249.99,
-    image: productBed2,
+    image: productDiam,
     category: "Storage",
     description: "Mobile bar cart with glass shelves.",
     inStock: true,

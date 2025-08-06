@@ -21,7 +21,6 @@ const categories = [
   { name: "Sofas", href: "/shop?category=Sofas" },
   { name: "Beds", href: "/shop?category=Beds" },
   { name: "Tables", href: "/shop?category=Tables" },
-  { name: "Decor", href: "/shop?category=Decor" },
 ];
 
 export default function Header() {

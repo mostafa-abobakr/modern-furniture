@@ -1,23 +1,33 @@
+import { Snackbar } from "@mui/material";
+import { Alert } from "@mui/material";
+import { Tooltip } from "@mui/material";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NotFound from "./components/pages/NotFound";
+import { CartProvider } from "./contexts/CartContext";
 
-function App() {
-    return (
-        <>
-            <h1 className="bg-amber-200">header</h1>
-            <Router>
-                <Routes>
-                    <Route path="/" element={<index/>} />
-                    <Route path="/shop" element={<NotFound/>} />
-                    <Route path="/cart" element={<NotFound/>} />
-                    <Route path="/about" element={<NotFound/>} />
-                    <Route path="/contact" element={<NotFound/>} />
-                    <Route path="/login" element={<NotFound/>} />
-                    <Route path="/signup" element={<NotFound/>} />
-                </Routes>
-            </Router>
-        </>
-    );
-}
+import Footer from "./components/layout/Footer";
+
+// import "./index.css";
+
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <Router>
+      <Tooltip>
+        <CartProvider>
+          <Snackbar>
+            <Alert />
+          </Snackbar>
+          <div className="min-h-screen flex flex-col">
+            
+            <Footer />  
+          </div>
+        </CartProvider>
+      </Tooltip>
+    </Router>
+  </QueryClientProvider>
+  
+);
 
 export default App;

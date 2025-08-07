@@ -24,6 +24,20 @@ const queryClient = new QueryClient();
 const stripePromise = loadStripe(
     "pk_test_51RtBVYFdpTDDRKF9c98ISBfOC2xXL75D37DMBzjkB6kcJ7SNSuZlAie8HMhMHss2V9RQYQyff8ADKDQxw6Naz4rr00l2qRZbBb"
 );
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+export function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [pathname]);
+
+    return null;
+}
+
 const App = () => (
     <QueryClientProvider client={queryClient}>
         <Router>
@@ -33,6 +47,7 @@ const App = () => (
                     <div className="min-h-screen flex flex-col bg-color">
                         <Header />
                         <main className="flex-1">
+                            <ScrollToTop />
                             <Routes>
                                 <Route path="/" element={<Index />} />
                                 <Route path="/shop" element={<Shop />} />
